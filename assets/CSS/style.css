@@ -25,11 +25,11 @@ input{
     outline: none;
     background: transparent;
 }
-body, html{
+/* body, html{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-}
+} */
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
