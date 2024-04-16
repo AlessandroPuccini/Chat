@@ -31,9 +31,11 @@
         <!-- Chat -->
         <article id="chat">
           <section id="chat-wrapper">
+
                 <section id="chat-body">
                 <!-- Inserimento dinamico  -->
                 </section>
+
                 <section id="chat-footer">
                   <div class="new-item-wrapper">
                    <textarea id="chat-text" placeholder="Aa"></textarea>
@@ -42,7 +44,45 @@
                    </span>
                   </div>
                 </section>
+
           </section>
+        </article>
+        <!-- TASKS -->
+        <article id="task">
+            <section id="task-wrapper">
+
+                <section id="task">
+                  <input type="text" id="task-search" placeholder="Ricerca Task">
+                </section>
+
+                <section id="task-body">
+                    <!-- Inerimento dinamico -->
+
+                </section>
+
+                <section id="task-footer">
+                    <div class="new-item-wrapper" id="new-task-wrapper">
+                        <textarea id="new-task-input" placeholder="Aa"></textarea>
+                        <span id="new-task-send">
+                            <img class="send-btn" src="./assets/img/send-outline.svg" >
+                        </span>
+
+                    </div>
+
+                </section>
+
+            </section>
+        </article>
+
+        <!-- A tua scelta -->
+        <article id="stats">
+            <section id="stats-wrapper">
+                <section id="stats-body">
+                    <div id="stats-chart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </section>
+            </section>
         </article>
 
     </section>
