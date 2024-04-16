@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wgth@300&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+:root {
+    font-size: 62.5%;
+    --color-design: #e34abd;
+    --color-design-grey: rgba(255,255,255,0.2);
+    --color-design-lightgrey: rgb(127,127,127);
+    --color-text-base: rgba(47,47,47,0.9);
+    --color-text-invert: rgb(213,213,213);
+    --gap-xs: 1rem;
+    --gap-sm: 2rem;
+    --gap-md: 4rem;
+    --gap-lg: 6rem;
+    --gap-xl: 9rem;
+    --gap-dafault: var(--gap-md);
+    --body-component-height: 10rem; 
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input{
+    border:none;
+    outline: none;
+    background: transparent;
+}
+body, html{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    background-color: rgb(23,23,26);
+    color: var(--color-text-invert);
+}
+.hide{
+    display: none;
+}
