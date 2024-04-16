@@ -7,5 +7,24 @@ serviceIconmap = new Map([
 ]);
 
 export default function init() {
-    console.log(serviceIconmap);
+    appServicesWrapper.addEventListener('click', e => {
+        e.stopPropagation();
+        e.preventDefault();
+        const target = getTarget(e);
+        console.log(target.dataset.stepmargin);
+        updateTab(target);
+        updateActiveIcon(target);
+    });
+}
+
+function updateTab(targetDiv) {
+  firstTab.style.marginLeft = "-" + (targetDiv.dataset.stepmargin * 100) + "vw";
+}
+
+function updateActiveIcon(targetDiv) {
+
+}
+
+function getTarget(e) {
+    return e.target.closest('[id$="tab-icon"]');
 }
