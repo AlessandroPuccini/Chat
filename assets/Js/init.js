@@ -11,7 +11,6 @@ export default function init() {
         e.stopPropagation();
         e.preventDefault();
         const target = getTarget(e);
-        console.log(target.dataset.stepmargin);
         updateTab(target);
         updateActiveIcon(target);
     });
@@ -22,7 +21,15 @@ function updateTab(targetDiv) {
 }
 
 function updateActiveIcon(targetDiv) {
-
+    const svgTarget = targetDiv.querySelector('svg');
+ serviceIconmap.forEach(serviceIconSvg =>{
+    const pathSvg = serviceIconSvg.querySelector('path');
+    if(serviceIconSvg === svgTarget){
+        pathSvg.setAttribute('fill', '#0f0');
+    }else{
+        pathSvg.setAttribute('fill', '#fff');
+    }
+ })
 }
 
 function getTarget(e) {
