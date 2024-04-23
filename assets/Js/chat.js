@@ -8,7 +8,7 @@ const chatBody = document.querySelector("#chat-body"),
     messageList = [
         {by: "user", message: "Ciao!"},
         {by: "admin", message: "Hola"},
-        {by: "user", message: "Come stai?"},
+        // {by: "user", message: "Come stai?"},
 
     ],
     newMessageEvt = new EventTarget();
@@ -33,7 +33,6 @@ function textareaevent(e){
     if(e.key === "Enter"){
         sendMessage(e);
     }
-  
 }
 
 function sendMessage(e){
@@ -50,7 +49,7 @@ function sendMessage(e){
 
 function simulateUserMessage(){
     setTimeout(() => {
-        messageList.push({ by: 'user', message: 'Ciao!'});
+        messageList.push({ by: 'user', message: 'Che bella giornata!'});
         newMessageEvt.dispatchEvent(new Event('newUserMessage'));
     }, 2000);
 }
