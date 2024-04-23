@@ -51,7 +51,7 @@ body{
     width: 100vw;
 }
 #page-content > :first-child{
-    margin-left: 0;
+    margin-left: -100vw;
     transition: all .5s;
 }
 
@@ -175,4 +175,7 @@ body{
 }
 .task-item :is(img, svg){
     cursor: pointer;
+}
+.task-item.hide{
+    display: none;
 }
